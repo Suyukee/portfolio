@@ -1,0 +1,40 @@
+'use client';
+
+import { styled } from '@mui/material';
+import IconStar from '@/icons/IconStar';
+
+export const StyledMainStackList = styled('ul')`
+	display: flex;
+	align-items: center;
+	gap: 20px;
+
+	margin: 0;
+	padding: 0;
+`;
+
+export const StyledMainStackItem = styled('li')`
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+`;
+
+export const StyledAdditionalStackList = styled('ul')`
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+	margin: 0;
+	padding: 0;
+`;
+
+export const StyledAdditionalStackItem = styled('li')`
+	display: flex;
+	align-items: center;
+	gap: 10px;
+`;
+
+export const StyledIconStar = styled(IconStar)`
+	box-shadow: 0 2px #000;
+`;
