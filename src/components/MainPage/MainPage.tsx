@@ -10,7 +10,7 @@ function MainPage() {
 	return (
 		<Grid container component="main" spacing={3} maxWidth={900}>
 			<Grid item component="section" xs={12} md={4} position="relative">
-				<DrawnPatternBox position="absolute" top={185} left={-30}>
+				<DrawnPatternBox>
 					<DrawnPattern />
 				</DrawnPatternBox>
 				<StyledPaper>
