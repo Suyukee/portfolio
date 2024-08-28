@@ -1,6 +1,16 @@
 'use client';
 
-import { styled } from '@mui/material';
+import { Box, styled } from '@mui/material';
+
+export const DrawnPatternBox = styled(Box)(({ theme }) => ({
+	position: 'absolute',
+	top: '185px',
+	left: '-30px',
+
+	[theme.breakpoints.down('md')]: {
+		left: '10px',
+	},
+}));
 
 export const StyledPaper = styled('div')`
 	padding: 25px;

@@ -24,7 +24,6 @@ const typography = {
 	},
 	button: {
 		fontSize: 16,
-		textTransform: 'none',
 	},
 	buttonSmall: {
 		fontSize: 13,

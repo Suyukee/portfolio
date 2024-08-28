@@ -1,14 +1,18 @@
 import { Grid } from '@mui/material';
-import { StyledPaper } from '@/components/MainPage/MainPageStyled';
+import { DrawnPatternBox, StyledPaper } from '@/components/MainPage/MainPageStyled';
 import HeroSection from '@/components/HeroSection';
 import StackSection from '@/components/StackSection';
-import AboutMe from '../AboutMe';
-import MyProjects from '../MyProjects/MyProjects';
+import AboutMe from '@/components/AboutMe';
+import MyProjects from '@/components/MyProjects';
+import DrawnPattern from '../DrawnPattern/DrawnPattern';
 
 function MainPage() {
 	return (
 		<Grid container component="main" spacing={3} maxWidth={900}>
-			<Grid item component="section" xs={12} md={4}>
+			<Grid item component="section" xs={12} md={4} position="relative">
+				<DrawnPatternBox position="absolute" top={185} left={-30}>
+					<DrawnPattern />
+				</DrawnPatternBox>
 				<StyledPaper>
 					<HeroSection />
 				</StyledPaper>

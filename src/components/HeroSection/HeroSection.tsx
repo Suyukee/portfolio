@@ -20,7 +20,7 @@ function HeroSection() {
 
 			<Link href="/files/резюме.pdf" variant="button" color="#fff" underline="none">
 				<StyledButton variant="contained">
-					<Typography variant="button" color="white">
+					<Typography variant="button" color="white" textTransform="none">
 						Моё резюме
 					</Typography>
 				</StyledButton>

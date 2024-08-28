@@ -13,7 +13,7 @@ export const StyledTextBackground = styled(Box)(`
 	height: 28px;
 
 	position: absolute;
-	top: 5px;
+	top: 2px;
 	left: -4px;
 
 	background: #b195f3;
