@@ -1,11 +1,12 @@
 import { Box, Typography } from '@mui/material';
+import FormSelect from '../FormSelect';
 
 const myProjects = [
 	{
 		id: '',
 		title: 'Калькулятор интегрирования',
 		image: '',
-		tags: [],
+		tags: ['Typescript'],
 	},
 	{
 		id: '',
@@ -19,6 +20,7 @@ function MyProjects() {
 	return (
 		<>
 			<Typography variant="h1">Мои проекты</Typography>
+			<FormSelect />
 			<Box display="flex" gap={4}>
 				{myProjects.map((project, index) => (
 					<Box key={index}>
