@@ -1,4 +1,4 @@
-import { Typography } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 import {
 	StyledAdditionalStackItem,
 	StyledAdditionalStackList,
@@ -25,12 +25,18 @@ function StackSection() {
 			<Typography variant="h1">Мой стек-технологий</Typography>
 
 			<StyledMainStackList>
-				{mainStack.map((technology, index) => (
-					<StyledMainStackItem key={index}>
-						{technology[1]}
-						<Typography variant="subtitle1">{technology[0]}</Typography>
-					</StyledMainStackItem>
-				))}
+				<Grid container spacing={2}>
+					{mainStack.map((technology, index) => (
+						<Grid item key={index} xs={6} sm={3}>
+							<StyledMainStackItem>
+								{technology[1]}
+								<Typography variant="subtitle1" noWrap>
+									{technology[0]}
+								</Typography>
+							</StyledMainStackItem>
+						</Grid>
+					))}
+				</Grid>
 			</StyledMainStackList>
 
 			<StyledAdditionalStackList>

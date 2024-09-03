@@ -10,14 +10,14 @@ export const StyledLinkProjectCard = styled(Link)`
 	align-items: center;
 `;
 
-export const StyledImageProjectCard = styled(Image)`
-	width: 100%;
-	border: 2px solid black;
-	border-radius: 20px 20px 0 0;
-	box-shadow: 3px 3px black;
+// export const StyledImageProjectCard = styled(Image)`
+// 	width: 100%;
+// 	border: 2px solid black;
+// 	border-radius: 20px 20px 0 0;
+// 	box-shadow: 3px 3px black;
 
-	object-fit: cover;
-`;
+// 	object-fit: cover;
+// `;
 
 export const StyledTypographyProjectCard = styled(Typography)(
 	({ theme }) => css`
@@ -33,3 +33,15 @@ export const StyledTypographyProjectCard = styled(Typography)(
 		box-shadow: 3px 3px black;
 	`,
 );
+
+export const StyledImageProjectCard = styled(Image)(({ theme }) => ({
+	width: '100%',
+	border: '2px solid black',
+	borderRadius: '20px 20px 0 0',
+	boxShadow: '3px 3px black',
+	objectFit: 'cover',
+
+	[theme.breakpoints.down('sm')]: {
+		height: '200px',
+	},
+}));
