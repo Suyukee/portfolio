@@ -1,17 +1,18 @@
-import { Box, Typography } from '@mui/material';
-import FormSelect from '../FormSelect';
+import { Grid, Typography } from '@mui/material';
+import FormSelect from '@/components/FormSelect';
+import ProjectCard from '@/components/MyProjects/ProjectCard';
 
 const myProjects = [
 	{
 		id: '',
 		title: 'Калькулятор интегрирования',
-		image: '',
+		image: '/images/project-cards/1.png',
 		tags: ['Typescript'],
 	},
 	{
 		id: '',
 		title: 'Игра на память',
-		image: '',
+		image: '/images/project-cards/2.png',
 		tags: [],
 	},
 ];
@@ -21,14 +22,13 @@ function MyProjects() {
 		<>
 			<Typography variant="h1">Мои проекты</Typography>
 			<FormSelect />
-			<Box display="flex" gap={4}>
+			<Grid container spacing={3} maxWidth={700}>
 				{myProjects.map((project, index) => (
-					<Box key={index}>
-						{project.image}
-						<Typography variant="body1">{project.title}</Typography>
-					</Box>
+					<Grid item key={index} xs={12} md={6}>
+						<ProjectCard title={project.title} imgUrl={project.image} gitUrl="" />
+					</Grid>
 				))}
-			</Box>
+			</Grid>
 		</>
 	);
 }

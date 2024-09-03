@@ -1,6 +1,6 @@
 const typography = {
 	fontSize: 14,
-	fontFamily: ['Comic Sans MS'].join(','),
+	fontFamily: ['Comic Sans MS', 'Inter'].join(','),
 	h1: {
 		fontSize: 24,
 	},

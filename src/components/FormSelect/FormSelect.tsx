@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { Box, InputLabel, MenuItem, Select, SelectChangeEvent, Typography } from '@mui/material';
-import { StyledFormControl } from './FormSelectStyled';
+import { StyledFormControl } from '@/components/FormSelect/FormSelectStyled';
 
 function FormSelect() {
 	const [age, setAge] = useState('');

@@ -5,8 +5,7 @@ import { Button, styled } from '@mui/material';
 export const StyledButton = styled(Button)`
 	width: 180px;
 	height: 52px;
-	background: #689bf7;
-	border: 2px solid black;
+	border: 2px solid;
 	border-radius: 10px;
 	box-shadow: 3px 3px #000;
 
@@ -14,7 +13,6 @@ export const StyledButton = styled(Button)`
 	-webkit-tap-highlight-color: transparent;
 
 	&:hover {
-		background: #689bf7;
 		box-shadow: 3px 3px #000;
 	}
 

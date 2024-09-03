@@ -1,6 +1,6 @@
 'use client';
 
-import { Box, styled, Typography } from '@mui/material';
+import { Box, css, styled, Typography } from '@mui/material';
 
 export const StyledTypography = styled(Typography)`
 	position: relative;
@@ -8,14 +8,16 @@ export const StyledTypography = styled(Typography)`
 `;
 
 // TODO: Переписать на динамические длины
-export const StyledTextBackground = styled(Box)(`
-	width: 92px;
-	height: 28px;
+export const StyledTextBackground = styled(Box)(
+	({ theme }) => css`
+		width: 92px;
+		height: 28px;
 
-	position: absolute;
-	top: 2px;
-	left: -4px;
+		position: absolute;
+		top: 2px;
+		left: -4px;
 
-	background: #b195f3;
-	z-index: 1;
-`);
+		background: ${theme.palette.secondary.main};
+		z-index: 1;
+	`,
+);
