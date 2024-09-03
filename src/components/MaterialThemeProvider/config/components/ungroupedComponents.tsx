@@ -4,14 +4,14 @@ const ungroupedComponents: Components<Omit<Theme, 'components'>> = {
 	MuiButtonBase: {
 		styleOverrides: {
 			root: {
-				userSelect: 'none',
+				WebkitTapHighlightColor: 'transparent',
 			},
 		},
 	},
 	MuiButton: {
 		styleOverrides: {
 			root: {
-				userSelect: 'none',
+				WebkitTapHighlightColor: 'transparent',
 			},
 		},
 	},
