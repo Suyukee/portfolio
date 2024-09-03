@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { Box, Link, Typography } from '@mui/material';
-import { StyledButton, StyledLink } from '@/components/HeroSection/HeroSectionStyled';
+import { StyledButton } from '@/components/HeroSection/HeroSectionStyled';
 import StylizedFrame from '@/components/StylizedFrame';
 import TypographyWithBackgrond from '@/components/TypographyWithBackground';
 
