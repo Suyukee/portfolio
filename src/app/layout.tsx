@@ -1,6 +1,7 @@
-import type { Metadata, Viewport } from 'next';
+import type { Metadata } from 'next';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
 import { ThemeProvider } from '@mui/material';
+import localFont from 'next/font/local';
 import './globals.css';
 import theme from '@/components/MaterialThemeProvider';
 
@@ -9,12 +10,7 @@ export const metadata: Metadata = {
 	description: 'Portfolio website Козырева Владимира',
 };
 
-export const viewport: Viewport = {
-	width: 'device-width',
-	initialScale: 1,
-	maximumScale: 1,
-	userScalable: false,
-};
+const comicSans = localFont({ src: '../../public/fonts/comic-sans.ttf' });
 
 export default function RootLayout({
 	children,
@@ -23,7 +19,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body>
+			<body className={comicSans.className}>
 				<AppRouterCacheProvider options={{ enableCssLayer: true }}>
 					<ThemeProvider theme={theme}>{children}</ThemeProvider>
 				</AppRouterCacheProvider>
