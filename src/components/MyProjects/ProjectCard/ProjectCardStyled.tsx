@@ -31,6 +31,12 @@ export const StyledTypographyProjectCard = styled(Typography)(
 		border-top: none;
 		border-radius: 0 0 20px 20px;
 		box-shadow: 3px 3px black;
+
+		&:active {
+			box-shadow: none;
+			transform: translateX(3px) translateY(3px);
+			transition: 0.2s;
+		}
 	`,
 );
 

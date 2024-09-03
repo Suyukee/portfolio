@@ -7,12 +7,14 @@ const myProjects = [
 		id: '',
 		title: 'Калькулятор интегрирования',
 		image: '/images/project-cards/1.png',
+		url: 'https://github.com/Suyukee/define-integral',
 		tags: ['Typescript'],
 	},
 	{
 		id: '',
 		title: 'Игра на память',
 		image: '/images/project-cards/2.png',
+		url: '',
 		tags: [],
 	},
 ];
@@ -25,7 +27,7 @@ function MyProjects() {
 			<Grid container spacing={3} maxWidth={700}>
 				{myProjects.map((project, index) => (
 					<Grid item key={index} xs={12} md={6}>
-						<ProjectCard title={project.title} imgUrl={project.image} gitUrl="" />
+						<ProjectCard title={project.title} imgUrl={project.image} gitUrl={project.url} />
 					</Grid>
 				))}
 			</Grid>
