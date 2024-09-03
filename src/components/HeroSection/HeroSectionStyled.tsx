@@ -9,8 +9,8 @@ export const StyledButton = styled(Button)`
 	border-radius: 10px;
 	box-shadow: 3px 3px #000;
 
-	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-	-webkit-tap-highlight-color: transparent;
+	&:-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	&:-webkit-tap-highlight-color: transparent;
 
 	&:hover {
 		box-shadow: 3px 3px #000;
