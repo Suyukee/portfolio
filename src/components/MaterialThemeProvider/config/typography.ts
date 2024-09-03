@@ -3,6 +3,7 @@ const typography = {
 	fontFamily: ['Comic Sans MS', 'Comic Sans'].join(','),
 	h1: {
 		fontSize: 24,
+		fontFamily: ['Comic Sans MS', 'Comic Sans'].join(','),
 	},
 	h2: {
 		fontSize: 20,
