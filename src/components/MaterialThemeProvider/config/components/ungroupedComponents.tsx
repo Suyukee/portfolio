@@ -5,6 +5,7 @@ const ungroupedComponents: Components<Omit<Theme, 'components'>> = {
 		styleOverrides: {
 			root: {
 				WebkitTapHighlightColor: 'transparent',
+				userSelect: 'none',
 			},
 		},
 	},
@@ -12,6 +13,7 @@ const ungroupedComponents: Components<Omit<Theme, 'components'>> = {
 		styleOverrides: {
 			root: {
 				WebkitTapHighlightColor: 'transparent',
+				userSelect: 'none',
 			},
 		},
 	},
