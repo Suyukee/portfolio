@@ -1,13 +1,10 @@
 'use client';
 
-import { Button, styled } from '@mui/material';
-import Link from 'next/link';
+import { Button, Link, styled } from '@mui/material';
 
-export const AvatarLink = styled(Link)`
-	user-select: none;
-	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-	-webkit-tap-highlight-color: transparent;
-`;
+// export const StyledLink = styled(Link)`
+// 	user-select: none;
+// `;
 
 export const StyledButton = styled(Button)`
 	width: 180px;
