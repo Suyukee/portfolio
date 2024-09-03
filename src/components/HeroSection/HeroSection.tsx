@@ -1,17 +1,17 @@
 import Image from 'next/image';
 import { Box, Link, Typography } from '@mui/material';
-import { StyledButton } from '@/components/HeroSection/HeroSectionStyled';
+import { AvatarLink, StyledButton } from '@/components/HeroSection/HeroSectionStyled';
 import StylizedFrame from '@/components/StylizedFrame';
 import TypographyWithBackgrond from '@/components/TypographyWithBackground';
 
 function HeroSection() {
 	return (
 		<>
-			<Link href="https://github.com/Suyukee">
+			<AvatarLink href="https://github.com/Suyukee">
 				<StylizedFrame>
 					<Image src="/images/avatar.jpg" width={170} height={170} alt="Фото" priority={true} />
 				</StylizedFrame>
-			</Link>
+			</AvatarLink>
 
 			<Box display="flex" flexDirection="column" alignItems="center">
 				<Typography variant="h1">Привет, я Вова</Typography>
