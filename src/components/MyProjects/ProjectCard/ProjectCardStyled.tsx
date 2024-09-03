@@ -1,8 +1,7 @@
 'use client';
 
-import { css, styled, Typography } from '@mui/material';
+import { css, Link, styled, Typography } from '@mui/material';
 import Image from 'next/image';
-import Link from 'next/link';
 
 export const StyledLinkProjectCard = styled(Link)`
 	display: flex;
