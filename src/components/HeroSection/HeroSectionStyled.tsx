@@ -4,6 +4,7 @@ import { Button, styled } from '@mui/material';
 import Link from 'next/link';
 
 export const AvatarLink = styled(Link)`
+	user-select: none;
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 	-webkit-tap-highlight-color: transparent;
 `;

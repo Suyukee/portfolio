@@ -11,6 +11,7 @@ export const StyledLinkProjectCard = styled(Link)`
 	border-radius: 20px;
 	box-shadow: 3px 3px black;
 
+	user-select: none;
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 	-webkit-tap-highlight-color: transparent;
 
