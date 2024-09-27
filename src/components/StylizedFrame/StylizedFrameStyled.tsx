@@ -5,7 +5,7 @@ import { styled } from '@mui/material';
 export const Frame = styled('div')`
 	position: relative;
 	display: flex;
-	border: 2px solid #000;
+	border: 2px solid #2c2c2c;
 `;
 
 export const Dot = styled('div')`
@@ -14,5 +14,5 @@ export const Dot = styled('div')`
 	height: 9px;
 
 	background-color: #fff;
-	border: 2px solid #000;
+	border: 2px solid #2c2c2c;
 `;

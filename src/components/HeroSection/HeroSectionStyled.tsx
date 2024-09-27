@@ -1,17 +1,10 @@
 'use client';
 
-import { Button, Link, styled } from '@mui/material';
-
-// export const StyledLink = styled(Link)`
-// 	user-select: none;
-// `;
+import { Button, styled } from '@mui/material';
 
 export const StyledButton = styled(Button)`
 	width: 180px;
 	height: 52px;
-	border: 2px solid;
-	border-radius: 10px;
-	box-shadow: 3px 3px #000;
 
 	&:active {
 		box-shadow: 3px 3px #000;

@@ -1,5 +1,3 @@
-import { light } from '@mui/material/styles/createPalette';
-
 const palette = {
 	primary: {
 		main: '#689BF7',

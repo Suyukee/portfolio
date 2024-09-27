@@ -1,6 +1,8 @@
 const typography = {
+	allVariants: {
+		color: '#2c2c2c',
+	},
 	fontSize: 14,
-	fontFamily: ['Comic Sans MS', 'Inter'].join(','),
 	h1: {
 		fontSize: 24,
 	},
