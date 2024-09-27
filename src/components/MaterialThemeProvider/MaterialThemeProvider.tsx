@@ -10,7 +10,7 @@ import formComponents from '@/components/MaterialThemeProvider/config/components
 import ungroupedComponents from '@/components/MaterialThemeProvider/config/components/ungroupedComponents';
 
 const customFont: NextFont = localFont({
-	src: '../public/fonts/comic-sans.ttf',
+	src: '../../../public/fonts/comic-sans.ttf',
 	display: 'swap',
 });
 
