@@ -13,11 +13,12 @@ export const StyledButton = styled(Button)`
 	border-radius: 10px;
 	box-shadow: 3px 3px #000;
 
-	&:hover {
+	&:active {
 		box-shadow: 3px 3px #000;
+		filter: brightness(95%);
 	}
 
-	&:active {
+	&:hover {
 		box-shadow: none;
 		transform: translateX(3px) translateY(3px);
 		transition: 0.2s;
