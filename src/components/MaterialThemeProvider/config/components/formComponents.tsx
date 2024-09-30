@@ -3,13 +3,17 @@ import { Components, Theme } from '@mui/material';
 
 const formComponents: Components<Omit<Theme, 'components'>> = {
 	MuiSelect: {
-		// defaultProps: {
-		// 	IconComponent: IconDropdown,
-		// },
+		defaultProps: {
+			IconComponent: IconDropdown,
+		},
 		styleOverrides: {
 			root: {
-				borderRadius: '10px',
+				borderRadius: '15px',
 				'.MuiOutlinedInput-notchedOutline': { borderWidth: '2px' },
+				textAlign: 'center',
+
+				'.MuiSelect-select': { borderRadius: 0 },
+				'.MuiSelect-icon': { position: 'absolute', right: 20 },
 			},
 		},
 	},

@@ -18,7 +18,6 @@ const ungroupedComponents: Components<Omit<Theme, 'components'>> = {
 			text: {},
 			contained: {
 				border: '2px solid #2c2c2c',
-				borderRadius: 20,
 			},
 			outlined: {
 				border: '2px solid #2c2c2c',
@@ -28,6 +27,15 @@ const ungroupedComponents: Components<Omit<Theme, 'components'>> = {
 	MuiPaper: {
 		styleOverrides: {
 			root: ({ theme }) => ({
+				padding: 25,
+				height: '100%',
+
+				display: 'flex',
+				flexDirection: 'column',
+				justifyContent: 'center',
+				alignItems: 'center',
+				gap: 15,
+
 				background: '#ebebeb',
 				borderRadius: `${theme.shape.borderRadius * 1.5}px`,
 			}),

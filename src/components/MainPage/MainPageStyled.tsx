@@ -11,14 +11,3 @@ export const DrawnPatternBox = styled('div')(({ theme }) => ({
 		display: 'none',
 	},
 }));
-
-export const StyledPaper = styled('div')`
-	padding: 25px;
-	height: 100%;
-
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 15px;
-`;

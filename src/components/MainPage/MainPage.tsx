@@ -1,5 +1,5 @@
-import { Box, Grid, Paper } from '@mui/material';
-import { DrawnPatternBox, StyledPaper } from '@/components/MainPage/MainPageStyled';
+import { Grid, Paper } from '@mui/material';
+import { DrawnPatternBox } from '@/components/MainPage/MainPageStyled';
 import HeroSection from '@/components/HeroSection';
 import StackSection from '@/components/StackSection';
 import AboutMe from '@/components/AboutMe';
@@ -14,31 +14,23 @@ function MainPage() {
 					<DrawnPatternBox>
 						<DrawnPattern />
 					</DrawnPatternBox>
-					<StyledPaper>
-						<HeroSection />
-					</StyledPaper>
+					<HeroSection />
 				</Paper>
 			</Grid>
 
 			<Grid item component="section" xs={12} md={8}>
 				<Paper variant="outlined">
-					<StyledPaper>
-						<StackSection />
-					</StyledPaper>
+					<StackSection />
 				</Paper>
 			</Grid>
 			<Grid item component="section" xs={12}>
 				<Paper variant="outlined">
-					<StyledPaper>
-						<AboutMe />
-					</StyledPaper>
+					<AboutMe />
 				</Paper>
 			</Grid>
 			<Grid item component="section" xs={12}>
 				<Paper variant="outlined">
-					<StyledPaper>
-						<MyProjects />
-					</StyledPaper>
+					<MyProjects />
 				</Paper>
 			</Grid>
 		</Grid>
