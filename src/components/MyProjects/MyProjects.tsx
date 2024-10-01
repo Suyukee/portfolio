@@ -47,7 +47,7 @@ const myProjects = [
 		title: 'Сайт портфолио',
 		image: '/images/project-cards/5.png',
 		url: 'https://github.com/Suyukee/memory-game',
-		tags: [''],
+		tags: ['', 'typescript', 'mui'],
 	},
 ];
 
