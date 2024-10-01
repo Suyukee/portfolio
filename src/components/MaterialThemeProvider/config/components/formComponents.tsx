@@ -34,9 +34,6 @@ const formComponents: Components<Omit<Theme, 'components'>> = {
 					background: '#ebebeb',
 					border: '2px solid #c2c2c2',
 				},
-				// '&.Mui-selected .MuiMenuItem-root': {
-				// 	background: '#689bf7',
-				// },
 			},
 		},
 	},
