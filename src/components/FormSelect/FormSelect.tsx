@@ -29,6 +29,7 @@ function FormSelect({ technology, setTechnology }: FormSelectProps) {
 				>
 					<MenuItem value="">Без фильтра</MenuItem>
 					<MenuItem value="typescript">TypeScript</MenuItem>
+					<MenuItem value="next-js">Next.js</MenuItem>
 					<MenuItem value="rtk-query">RTK query</MenuItem>
 					<MenuItem value="mui">MUI</MenuItem>
 				</Select>
