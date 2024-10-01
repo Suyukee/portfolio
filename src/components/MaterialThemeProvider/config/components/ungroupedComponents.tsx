@@ -27,17 +27,19 @@ const ungroupedComponents: Components<Omit<Theme, 'components'>> = {
 	MuiPaper: {
 		styleOverrides: {
 			root: ({ theme }) => ({
-				padding: 25,
-				height: '100%',
+				'&.MuiPaper-root:not(.MuiMenu-paper)': {
+					padding: 25,
+					height: '100%',
 
-				display: 'flex',
-				flexDirection: 'column',
-				justifyContent: 'center',
-				alignItems: 'center',
-				gap: 15,
+					display: 'flex',
+					flexDirection: 'column',
+					justifyContent: 'center',
+					alignItems: 'center',
+					gap: 15,
 
-				background: '#ebebeb',
-				borderRadius: `${theme.shape.borderRadius * 1.5}px`,
+					background: '#ebebeb',
+					borderRadius: `${theme.shape.borderRadius * 1.5}px`,
+				},
 			}),
 			outlined: {
 				border: '3px solid #2c2c2c',
