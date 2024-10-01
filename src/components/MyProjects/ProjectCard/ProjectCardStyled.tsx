@@ -1,60 +1,26 @@
 'use client';
 
-import { css, Link, styled, Typography } from '@mui/material';
+import { Button, styled, Typography } from '@mui/material';
 import Image from 'next/image';
 
-export const StyledLinkProjectCard = styled(Link)`
+export const StyledLinkProjectCard = styled(Button)`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	border-radius: 20px;
-	box-shadow: 3px 3px black;
-
-	&:active {
-		transition: 0.2s;
-		filter: brightness(80%);
-	}
-
-	&:hover {
-		box-shadow: none;
-		transform: translateX(3px) translateY(3px);
-		transition: 0.2s;
-	}
+	padding: 0;
 `;
 
-// export const StyledImageProjectCard = styled(Image)`
-// 	width: 100%;
-// 	border: 2px solid black;
-// 	border-radius: 20px 20px 0 0;
-// 	box-shadow: 3px 3px black;
+export const StyledTypographyProjectCard = styled(Typography)`
+	padding: 18px;
+	width: 100%;
 
-// 	object-fit: cover;
-// `;
-
-export const StyledTypographyProjectCard = styled(Typography)(
-	({ theme }) => css`
-		padding: 18px;
-		width: 100%;
-
-		text-align: center;
-
-		background: ${theme.palette.secondary.light};
-		border: 2px solid black;
-		border-top: none;
-		border-radius: 0 0 20px 20px;
-
-		&:active {
-			box-shadow: none;
-			transform: translateX(3px) translateY(3px);
-			transition: 0.2s;
-		}
-	`,
-);
+	text-align: center;
+	border-top: 2px solid #2c2c2c;
+`;
 
 export const StyledImageProjectCard = styled(Image)(({ theme }) => ({
 	width: '100%',
-	border: '2px solid black',
-	borderRadius: '20px 20px 0 0',
+	borderRadius: '18px 18px 0 0',
 	objectFit: 'cover',
 
 	[theme.breakpoints.down('sm')]: {

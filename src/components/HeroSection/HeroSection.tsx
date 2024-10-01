@@ -18,13 +18,11 @@ function HeroSection() {
 				<TypographyWithBackgrond text="frontend-разработчик" variant="subtitle1" />
 			</Box>
 
-			<Link href="/files/резюме.pdf" variant="button" color="#fff" underline="none">
-				<StyledButton variant="contained">
-					<Typography variant="button" color="white" textTransform="none">
-						Моё резюме
-					</Typography>
-				</StyledButton>
-			</Link>
+			<StyledButton variant="contained" href="/files/резюме.pdf">
+				<Typography variant="button" color="white" textTransform="none">
+					Моё резюме
+				</Typography>
+			</StyledButton>
 		</>
 	);
 }

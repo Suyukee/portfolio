@@ -11,17 +11,23 @@ const ungroupedComponents: Components<Omit<Theme, 'components'>> = {
 	},
 	MuiButton: {
 		styleOverrides: {
-			root: ({ theme }) => ({
+			root: {
+				textTransform: 'none',
+			},
+			contained: ({ theme }) => ({
+				border: '2px solid #2c2c2c',
 				borderRadius: theme.shape.borderRadius,
 				boxShadow: '3px 3px #2c2c2c',
+
+				'&:active': {
+					filter: 'brightness(95%)',
+				},
+				'&:hover': {
+					boxShadow: 'none',
+					transform: 'translateX(3px) translateY(3px)',
+					transition: '0.1s',
+				},
 			}),
-			text: {},
-			contained: {
-				border: '2px solid #2c2c2c',
-			},
-			outlined: {
-				border: '2px solid #2c2c2c',
-			},
 		},
 	},
 	MuiPaper: {
