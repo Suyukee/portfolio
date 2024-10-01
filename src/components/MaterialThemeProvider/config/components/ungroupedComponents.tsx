@@ -28,7 +28,7 @@ const ungroupedComponents: Components<Omit<Theme, 'components'>> = {
 		styleOverrides: {
 			root: ({ theme }) => ({
 				'&.MuiPaper-root:not(.MuiMenu-paper)': {
-					padding: 25,
+					padding: theme.spacing(3),
 					height: '100%',
 
 					display: 'flex',
@@ -39,10 +39,14 @@ const ungroupedComponents: Components<Omit<Theme, 'components'>> = {
 
 					background: '#ebebeb',
 					borderRadius: `${theme.shape.borderRadius * 1.5}px`,
+
+					[theme.breakpoints.down('md')]: {
+						padding: '25px 15px',
+					},
 				},
 			}),
 			outlined: {
-				border: '3px solid #2c2c2c',
+				border: '2px solid #2c2c2c',
 			},
 		},
 	},
