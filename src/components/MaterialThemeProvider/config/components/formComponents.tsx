@@ -1,6 +1,5 @@
 import IconDropdown from '@/icons/IconDropdown';
 import { Components, Theme } from '@mui/material';
-import { transform } from 'next/dist/build/swc';
 
 const formComponents: Components<Omit<Theme, 'components'>> = {
 	MuiSelect: {
@@ -13,7 +12,7 @@ const formComponents: Components<Omit<Theme, 'components'>> = {
 				textAlign: 'center',
 				'.MuiOutlinedInput-notchedOutline': {
 					border: '2px solid #2c2c2c',
-					borderRadius: `${theme.shape.borderRadius * 0.75}px`,
+					borderRadius: theme.shape.borderRadius,
 					boxShadow: '3px 3px #2c2c2c',
 				},
 				'&.Mui-focused .MuiOutlinedInput-notchedOutline': {
@@ -28,13 +27,31 @@ const formComponents: Components<Omit<Theme, 'components'>> = {
 	},
 	MuiMenu: {
 		styleOverrides: {
-			root: {
+			root: ({ theme }) => ({
 				'.MuiMenu-paper': {
-					borderRadius: 10,
+					borderRadius: `${theme.shape.borderRadius * 0.5}px`,
 					background: '#ebebeb',
 					border: '2px solid #c2c2c2',
 				},
-			},
+			}),
+		},
+	},
+	MuiMenuItem: {
+		styleOverrides: {
+			root: ({ theme }) => ({
+				'&.Mui-selected': {
+					background: theme.palette.secondary.light,
+					'&:hover': {
+						background: theme.palette.secondary.main,
+					},
+				},
+				'&.Mui-selected:hover': {
+					background: theme.palette.secondary.main,
+				},
+				'&.Mui-selected:first-of-type': {
+					background: theme.palette.secondary.light,
+				},
+			}),
 		},
 	},
 };
