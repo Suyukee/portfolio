@@ -5,7 +5,6 @@ const palette = {
 	},
 	secondary: {
 		main: '#B195F3',
-		dark: '#B195F3',
 		light: '#C6B9FF',
 	},
 };
