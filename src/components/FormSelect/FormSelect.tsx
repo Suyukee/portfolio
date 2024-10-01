@@ -1,14 +1,15 @@
-'use client';
-
-import { useState } from 'react';
 import { Box, InputLabel, MenuItem, Select, SelectChangeEvent, Typography } from '@mui/material';
 import { StyledFormControl } from '@/components/FormSelect/FormSelectStyled';
+import { Dispatch, SetStateAction } from 'react';
 
-function FormSelect() {
-	const [age, setAge] = useState('');
+type FormSelectProps = {
+	technology: string;
+	setTechnology: Dispatch<SetStateAction<string>>;
+};
 
+function FormSelect({ technology, setTechnology }: FormSelectProps) {
 	const handleChange = (event: SelectChangeEvent) => {
-		setAge(event.target.value as string);
+		setTechnology(event.target.value as string);
 	};
 
 	return (
@@ -22,14 +23,14 @@ function FormSelect() {
 				<Select
 					labelId="demo-simple-select-label"
 					id="demo-simple-select"
-					value={age}
+					value={technology}
 					label="Техногологии"
 					onChange={handleChange}
 				>
 					<MenuItem value="">Без фильтра</MenuItem>
-					<MenuItem value="Typescript">TypeScript</MenuItem>
-					<MenuItem value={2}>RTK query</MenuItem>
-					<MenuItem value={3}>MUI</MenuItem>
+					<MenuItem value="typescript">TypeScript</MenuItem>
+					<MenuItem value="rtk-query">RTK query</MenuItem>
+					<MenuItem value="mui">MUI</MenuItem>
 				</Select>
 			</StyledFormControl>
 		</Box>
