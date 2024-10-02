@@ -2,12 +2,15 @@
 
 import { styled } from '@mui/material';
 
-export const DrawnPatternBox = styled('div')(({ theme }) => ({
-	position: 'absolute',
-	top: '205px',
-	left: '-30px',
+type DrawnPatternProps = { top?: number; left?: number; right?: number; hide?: boolean };
 
-	[theme.breakpoints.down('lg')]: {
-		display: 'none',
+export const DrawnPatternBox = styled('div')<DrawnPatternProps>(({ theme, top, left, right }) => ({
+	position: 'absolute',
+	top: `${top}px`,
+	left: `${left}px`,
+	right: `${right}px`,
+
+	[theme.breakpoints.down(1010)]: {
+		display: '$none',
 	},
 }));

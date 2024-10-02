@@ -23,12 +23,8 @@ export const StyledTypographyProjectCard = styled(Typography)`
 	border-top: 2px solid #2c2c2c;
 `;
 
-export const StyledImageProjectCard = styled(Image)(({ theme }) => ({
-	width: '100%',
-	borderRadius: '18px 18px 0 0',
-	objectFit: 'cover',
-
-	[theme.breakpoints.down('sm')]: {
-		height: '200px',
-	},
-}));
+export const StyledImageProjectCard = styled(Image)`
+	width: 100%;
+	border-radius: 18px 18px 0 0;
+	object-fit: cover;
+`;
