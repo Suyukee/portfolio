@@ -24,8 +24,7 @@ export const StyledContactBox = styled(Box)(({ theme }) => ({
 }));
 
 export const StyledContactItem = styled(Typography)<DrawnPatternProps>(({ background }) => ({
-	padding: '0 20px',
-	height: 60,
+	padding: '10px 20px',
 
 	display: 'flex',
 	justifyContent: 'center',

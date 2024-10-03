@@ -32,7 +32,7 @@ function AboutMe() {
 			</StyledAboutMeBox>
 			<StyledContactBox>
 				{myContacts.map((contact, index) => (
-					<StyledContactItem key={index} background={contact.color}>
+					<StyledContactItem key={index} background={contact.color} variant="body2">
 						{contact.icon}
 						{contact.title}
 					</StyledContactItem>
