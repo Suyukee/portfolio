@@ -1,4 +1,4 @@
-import { Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import { StyledAboutMeBox } from './AboutMeStyled';
 
 const factsAboutMe = [
@@ -21,6 +21,7 @@ function AboutMe() {
 					))}
 				</Typography>
 			</StyledAboutMeBox>
+			<Box>Нижний новгород</Box>
 		</>
 	);
 }

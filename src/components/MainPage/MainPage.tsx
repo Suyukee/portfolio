@@ -1,11 +1,12 @@
 import { Grid, Paper } from '@mui/material';
-import { DrawnPatternBox } from '@/components/MainPage/MainPageStyled';
+import { DrawnPatternBox, ShapeAsteriskStyled } from '@/components/MainPage/MainPageStyled';
 import HeroSection from '@/components/HeroSection';
 import StackSection from '@/components/StackSection';
 import AboutMe from '@/components/AboutMe';
 import MyProjects from '@/components/MyProjects';
 import ShapeStar from '@/icons/ShapeStar';
 import DrawnPattern from '../DrawnPattern/DrawnPattern';
+import ShapeAsterisk from '@/icons/ShapeAsterisk';
 
 function MainPage() {
 	return (
@@ -25,12 +26,6 @@ function MainPage() {
 				</Paper>
 			</Grid>
 
-			<Grid item component="section" xs={12}>
-				<Paper variant="outlined">
-					<AboutMe />
-				</Paper>
-			</Grid>
-
 			<Grid item component="section" xs={12} position="relative">
 				<Paper variant="outlined">
 					<DrawnPatternBox top={0} right={-15}>
@@ -40,9 +35,12 @@ function MainPage() {
 				</Paper>
 			</Grid>
 
-			<Grid item component="section" xs={12}>
+			<Grid item component="section" xs={12} position="relative">
 				<Paper variant="outlined">
-					<h1>контакты</h1>
+					<DrawnPatternBox top={50} right={0}>
+						<ShapeAsteriskStyled />
+					</DrawnPatternBox>
+					<AboutMe />
 				</Paper>
 			</Grid>
 		</Grid>
