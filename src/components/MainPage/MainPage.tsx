@@ -1,5 +1,5 @@
 import { Grid, Paper } from '@mui/material';
-import { DrawnPatternBox, ShapeAsteriskStyled } from '@/components/MainPage/MainPageStyled';
+import { DrawnPatternBox } from '@/components/MainPage/MainPageStyled';
 import HeroSection from '@/components/HeroSection';
 import StackSection from '@/components/StackSection';
 import AboutMe from '@/components/AboutMe';
@@ -37,8 +37,11 @@ function MainPage() {
 
 			<Grid item component="section" xs={12} position="relative">
 				<Paper variant="outlined">
-					<DrawnPatternBox top={50} right={0}>
-						<ShapeAsteriskStyled />
+					<DrawnPatternBox top={310} left={0}>
+						<ShapeAsterisk />
+					</DrawnPatternBox>
+					<DrawnPatternBox top={310} right={-18}>
+						<ShapeAsterisk />
 					</DrawnPatternBox>
 					<AboutMe />
 				</Paper>

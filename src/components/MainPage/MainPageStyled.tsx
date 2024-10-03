@@ -1,6 +1,5 @@
 'use client';
 
-import ShapeAsterisk from '@/icons/ShapeAsterisk';
 import { styled } from '@mui/material';
 
 type DrawnPatternProps = {
@@ -24,8 +23,3 @@ export const DrawnPatternBox = styled('div')<DrawnPatternProps>(
 		},
 	}),
 );
-
-export const ShapeAsteriskStyled = styled(ShapeAsterisk)`
-	filter: drop-shadow(3px 3px #2c2c2c);
-	-webkit-filter: drop-shadow(3px 3px #2c2c2c);
-`;

@@ -1,11 +1,20 @@
-import { Box, Typography } from '@mui/material';
-import { StyledAboutMeBox } from './AboutMeStyled';
+import { Grid, Typography } from '@mui/material';
+import { StyledAboutMeBox, StyledContactItem } from './AboutMeStyled';
+import IconLocation from '@/icons/IconLocation';
+import IconMessage from '@/icons/IconMessage';
+import IconTelegram from '@/icons/IconTelegram';
 
 const factsAboutMe = [
 	'Бакалавриат в IT сфере',
 	'Прошёл курс TypeScript + React',
 	'Больше года обучения',
 	'Прошёл восьминедельную стажировку в IT-компании на позиции frontend-разработчик ',
+];
+
+const myContacts = [
+	{ icon: <IconLocation />, title: 'Нижний Новгород', color: '#FFC567' },
+	{ icon: <IconMessage />, title: 'suyukee@ya.ru', color: '#C6B9FF' },
+	{ icon: <IconTelegram />, title: '@suyukee', color: '#689BF7' },
 ];
 
 function AboutMe() {
@@ -21,7 +30,16 @@ function AboutMe() {
 					))}
 				</Typography>
 			</StyledAboutMeBox>
-			<Box>Нижний новгород</Box>
+			<Grid container spacing={1} paddingTop={4} maxWidth={700}>
+				{myContacts.map((contact, index) => (
+					<Grid key={index} item xs={12} md={4} display="flex" justifyContent="center">
+						<StyledContactItem background={contact.color}>
+							{contact.icon}
+							{contact.title}
+						</StyledContactItem>
+					</Grid>
+				))}
+			</Grid>
 		</>
 	);
 }
