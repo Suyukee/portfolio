@@ -19,7 +19,7 @@ export const DrawnPatternBox = styled('div')<DrawnPatternProps>(
 		bottom: `${bottom}px`,
 
 		[theme.breakpoints.down(1010)]: {
-			// display: 'none',
+			display: hide ? 'none' : '',
 		},
 	}),
 );
