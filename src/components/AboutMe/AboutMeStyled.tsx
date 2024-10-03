@@ -12,17 +12,29 @@ export const StyledAboutMeBox = styled(Box)`
 	justify-content: left;
 `;
 
-export const StyledContactItem = styled(Typography)<DrawnPatternProps>(
-	({ background }) => `
-	padding: 10px 20px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 10px;
+export const StyledContactBox = styled(Box)(({ theme }) => ({
+	paddingTop: 30,
+	display: 'flex',
+	justifyContent: 'center',
+	gap: 15,
 
-	text-align: center;
-	background: ${background};
-	border: 2px solid #2c2c2c;
-	border-radius: 30px;
-`,
-);
+	[theme.breakpoints.down(750)]: {
+		flexDirection: 'column',
+	},
+}));
+
+export const StyledContactItem = styled(Typography)<DrawnPatternProps>(({ background }) => ({
+	padding: '0 20px',
+	height: 60,
+
+	display: 'flex',
+	justifyContent: 'center',
+	alignItems: 'center',
+	gap: 10,
+
+	textAlign: 'center',
+	background: `${background}`,
+	border: '2px solid #2c2c2c',
+	borderRadius: 30,
+	boxShadow: '3px 3px #2c2c2c',
+}));

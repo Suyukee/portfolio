@@ -1,5 +1,5 @@
-import { Grid, Typography } from '@mui/material';
-import { StyledAboutMeBox, StyledContactItem } from './AboutMeStyled';
+import { Typography } from '@mui/material';
+import { StyledAboutMeBox, StyledContactBox, StyledContactItem } from './AboutMeStyled';
 import IconLocation from '@/icons/IconLocation';
 import IconMessage from '@/icons/IconMessage';
 import IconTelegram from '@/icons/IconTelegram';
@@ -30,16 +30,14 @@ function AboutMe() {
 					))}
 				</Typography>
 			</StyledAboutMeBox>
-			<Grid container spacing={1} paddingTop={4} maxWidth={700}>
+			<StyledContactBox>
 				{myContacts.map((contact, index) => (
-					<Grid key={index} item xs={12} md={4} display="flex" justifyContent="center">
-						<StyledContactItem background={contact.color}>
-							{contact.icon}
-							{contact.title}
-						</StyledContactItem>
-					</Grid>
+					<StyledContactItem key={index} background={contact.color}>
+						{contact.icon}
+						{contact.title}
+					</StyledContactItem>
 				))}
-			</Grid>
+			</StyledContactBox>
 		</>
 	);
 }

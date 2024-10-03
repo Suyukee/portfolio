@@ -37,10 +37,16 @@ function MainPage() {
 
 			<Grid item component="section" xs={12} position="relative">
 				<Paper variant="outlined">
-					<DrawnPatternBox top={310} left={0}>
+					<DrawnPatternBox top={10} left={10}>
 						<ShapeAsterisk />
 					</DrawnPatternBox>
-					<DrawnPatternBox top={310} right={-18}>
+					<DrawnPatternBox top={10} right={-10}>
+						<ShapeAsterisk />
+					</DrawnPatternBox>
+					<DrawnPatternBox bottom={-10} right={-10}>
+						<ShapeAsterisk />
+					</DrawnPatternBox>
+					<DrawnPatternBox bottom={-10} left={10}>
 						<ShapeAsterisk />
 					</DrawnPatternBox>
 					<AboutMe />
