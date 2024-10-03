@@ -43,12 +43,6 @@ function MainPage() {
 					<DrawnPatternBox top={10} right={-10}>
 						<ShapeAsterisk />
 					</DrawnPatternBox>
-					<DrawnPatternBox bottom={-10} right={-10}>
-						<ShapeAsterisk />
-					</DrawnPatternBox>
-					<DrawnPatternBox bottom={-10} left={10}>
-						<ShapeAsterisk />
-					</DrawnPatternBox>
 					<AboutMe />
 				</Paper>
 			</Grid>
