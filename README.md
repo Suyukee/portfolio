@@ -1,36 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## О приложении
 
-## Getting Started
+Веб-приложение представляет собой моё резюме, в котором показаны некоторые мои проекты с возможностью перейти на github и посмотреть их используя удобный фильтр
+Также можно открыть моё резюме и посмотреть мои контакты
 
-First, run the development server:
+## Реализация
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Приложение создано с использованием React, Typescript, NextJS, MUI
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Сайт адаптирован под все устройства
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Деплой на Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Приложение можно посмотреть по ссылке:
+https://portfolio-phi-virid-20.vercel.app/
 
-## Learn More
+## Примеры
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![изображение](https://github.com/user-attachments/assets/092d07b3-9ee8-4001-b400-7c964c8ef413)
+![изображение](https://github.com/user-attachments/assets/c660c02c-ac56-4531-988f-9cde39b2a362)
