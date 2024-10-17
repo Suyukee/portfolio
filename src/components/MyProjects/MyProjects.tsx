@@ -4,6 +4,7 @@ import { Grid, Typography } from '@mui/material';
 import FormSelect from '@/components/FormSelect';
 import ProjectCard from '@/components/MyProjects/ProjectCard';
 import { useState } from 'react';
+import { myProjects } from './Projects';
 
 interface Project {
 	id: string;
@@ -12,44 +13,6 @@ interface Project {
 	url: string;
 	tags: string[];
 }
-
-const myProjects = [
-	{
-		id: '1',
-		title: 'Калькулятор интегрирования',
-		image: '/images/project-cards/1.png',
-		url: 'https://github.com/Suyukee/define-integral',
-		tags: ['', 'typescript', 'next-js'],
-	},
-	{
-		id: '2',
-		title: 'Игра на память',
-		image: '/images/project-cards/2.png',
-		url: 'https://github.com/Suyukee/memory-game',
-		tags: ['', 'next-js'],
-	},
-	{
-		id: '3',
-		title: 'Блог',
-		image: '/images/project-cards/3.png',
-		url: 'https://github.com/Suyukee/blog-on-react',
-		tags: ['', 'next-js'],
-	},
-	{
-		id: '4',
-		title: 'Отель Solar',
-		image: '/images/project-cards/4.png',
-		url: 'https://github.com/Suyukee/hotel-solar',
-		tags: ['', 'next-js'],
-	},
-	{
-		id: '5',
-		title: 'Сайт портфолио',
-		image: '/images/project-cards/5.png',
-		url: 'https://github.com/Suyukee/portfolio',
-		tags: ['', 'typescript', 'next-js', 'mui'],
-	},
-];
 
 function MyProjects() {
 	const [technology, setTechnology] = useState('');
