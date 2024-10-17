@@ -17,4 +17,4 @@ https://portfolio-phi-virid-20.vercel.app/
 ## Примеры
 
 ![изображение](https://github.com/user-attachments/assets/092d07b3-9ee8-4001-b400-7c964c8ef413)
-![изображение](https://github.com/user-attachments/assets/c660c02c-ac56-4531-988f-9cde39b2a362)
+![изображение](https://github.com/user-attachments/assets/2ee3962a-fc6c-4f8c-9a64-04f00e4c083c)
