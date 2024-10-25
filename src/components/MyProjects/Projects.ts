@@ -1,5 +1,19 @@
 export const myProjects = [
 	{
+		id: '9',
+		title: 'Сайт рецептов',
+		image: '/images/project-cards/9.png',
+		url: 'https://github.com/Suyukee/recipes',
+		tags: ['', 'typescript', 'next-js', 'react-query'],
+	},
+	{
+		id: '5',
+		title: 'Сайт портфолио',
+		image: '/images/project-cards/5.png',
+		url: 'https://github.com/Suyukee/portfolio',
+		tags: ['', 'typescript', 'next-js', 'mui'],
+	},
+	{
 		id: '1',
 		title: 'Калькулятор интегрирования',
 		image: '/images/project-cards/1.png',
@@ -47,12 +61,5 @@ export const myProjects = [
 		image: '/images/project-cards/8.png',
 		url: 'https://github.com/Suyukee/copycon-test-task',
 		tags: ['', 'typescript', 'rtk-query'],
-	},
-	{
-		id: '5',
-		title: 'Сайт портфолио',
-		image: '/images/project-cards/5.png',
-		url: 'https://github.com/Suyukee/portfolio',
-		tags: ['', 'typescript', 'next-js', 'mui'],
 	},
 ];
