@@ -4,12 +4,13 @@ import { styled } from '@mui/material';
 import IconStar from '@/icons/IconStar';
 
 export const StyledMainStackList = styled('ul')`
+	width: 100%;
 	display: flex;
 	align-items: center;
 	gap: 20px;
 
 	margin: 0;
-	padding: 0;
+	padding: 0 20px;
 `;
 
 export const StyledMainStackItem = styled('li')`
@@ -18,6 +19,11 @@ export const StyledMainStackItem = styled('li')`
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+`;
+
+export const StyledIcon = styled('div')`
+	width: 30px;
+	height: 30px;
 `;
 
 export const StyledAdditionalStackList = styled('ul')`

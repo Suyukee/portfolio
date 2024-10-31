@@ -15,9 +15,9 @@ const mainStack = [
 	['TypeScript', <IconTypescript />],
 	['React', <IconReact />],
 	['Next.js', <IconNextjs />],
-	['RTK query', <IconRTKQuery />],
+	['React query', <IconRTKQuery />],
 ];
-const additionalStack = ['Material UI', 'React-hook-form', 'Git', 'i18next', 'use-query-param'];
+const additionalStack = ['RTK query', 'Material UI', 'React-hook-form'];
 
 function StackSection() {
 	return (
