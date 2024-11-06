@@ -1,5 +1,12 @@
 export const myProjects = [
 	{
+		id: '10',
+		title: 'Сайт для изучения английского',
+		image: '/images/project-cards/10.png',
+		url: 'https://github.com/Suyukee/english-helper',
+		tags: ['', 'typescript', 'next-js'],
+	},
+	{
 		id: '9',
 		title: 'Сайт рецептов',
 		image: '/images/project-cards/9.png',

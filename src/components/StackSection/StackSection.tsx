@@ -9,13 +9,13 @@ import {
 import IconTypescript from '@/icons/IconTypescript';
 import IconReact from '@/icons/IconReact';
 import IconNextjs from '@/icons/IconNextjs';
-import IconRTKQuery from '@/icons/IconRTKQuery';
+import IconReactQuery from '@/icons/IconReactQuery';
 
 const mainStack = [
 	['TypeScript', <IconTypescript />],
 	['React', <IconReact />],
 	['Next.js', <IconNextjs />],
-	['React query', <IconRTKQuery />],
+	['React query', <IconReactQuery />],
 ];
 const additionalStack = ['RTK query', 'Material UI', 'React-hook-form'];
 
