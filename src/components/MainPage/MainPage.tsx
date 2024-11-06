@@ -13,7 +13,7 @@ function MainPage() {
 		<Grid container component="main" spacing={2} maxWidth={900}>
 			<Grid item component="section" xs={12} md={4} position="relative">
 				<Paper variant="outlined">
-					<DrawnPatternBox top={196} left={-40} hide>
+					<DrawnPatternBox top={175} left={-40} hide>
 						<DrawnPattern />
 					</DrawnPatternBox>
 					<HeroSection />
