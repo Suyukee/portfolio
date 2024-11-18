@@ -35,5 +35,5 @@ export const StyledContactItem = styled(Typography)<DrawnPatternProps>(({ backgr
 	background: `${background}`,
 	border: '2px solid #2c2c2c',
 	borderRadius: 30,
-	// boxShadow: '3px 3px #2c2c2c',
+	fontStyle: 'normal',
 }));

@@ -30,7 +30,7 @@ function AboutMe() {
 					))}
 				</Typography>
 			</StyledAboutMeBox>
-			<StyledContactBox>
+			<StyledContactBox component="address">
 				{myContacts.map((contact, index) => (
 					<StyledContactItem key={index} background={contact.color} variant="body2">
 						{contact.icon}
