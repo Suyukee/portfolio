@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { Grid, Typography } from '@mui/material';
+import { Grid, Skeleton, Typography } from '@mui/material';
 import FormSelect from '@/components/FormSelect';
 import ProjectCard from '@/components/MyProjects/ProjectCard';
 import { ProjectDto } from '@/types/projects';
@@ -30,12 +30,17 @@ function MyProjects() {
 			<Typography variant="h1">Мои проекты</Typography>
 			<FormSelect technology={technology} setTechnology={setTechnology} />
 			<Grid container spacing={3} maxWidth={700}>
-				{isLoading && <Typography>Loading...</Typography>}
-				{projects?.filter(projectFilter).map((project) => (
-					<Grid item key={project.id} xs={12} md={6}>
-						<ProjectCard title={project.title} imgUrl={project.image} gitUrl={project.url} />
-					</Grid>
-				))}
+				{(isLoading ? Array.from(new Array(6)) : projects?.filter(projectFilter))?.map(
+					(project, index) => (
+						<Grid item key={index} xs={12} md={6}>
+							{project ? (
+								<ProjectCard title={project.title} imgUrl={project.image} gitUrl={project.url} />
+							) : (
+								<Skeleton variant="rounded" width="100%" height={266} />
+							)}
+						</Grid>
+					),
+				)}
 			</Grid>
 		</>
 	);
