@@ -5,10 +5,11 @@ import IconMessage from '@/icons/IconMessage';
 import IconTelegram from '@/icons/IconTelegram';
 
 const factsAboutMe = [
+	'Около 1.5 лет самостоятельного обучения',
 	'Бакалавриат в IT сфере',
+	'2 месяца стажировки frontend-разработчиком в VVDEV & Flang',
+	'3 месяца стажировки frontend-разработчиком в Neoflex',
 	'Прошёл курс TypeScript + React',
-	'Больше года обучения',
-	'Прошёл восьминедельную стажировку в IT-компании на позиции frontend-разработчик ',
 ];
 
 const myContacts = [
@@ -22,7 +23,7 @@ function AboutMe() {
 		<>
 			<Typography variant="h1">Обо мне</Typography>
 			<StyledAboutMeBox>
-				<Typography component="ol" maxWidth={750} display="flex" flexDirection="column" gap={2}>
+				<Typography component="ul" maxWidth={750} display="flex" flexDirection="column" gap={2}>
 					{factsAboutMe.map((fact, index) => (
 						<Typography key={index} component="li" variant="subtitle1">
 							{fact}

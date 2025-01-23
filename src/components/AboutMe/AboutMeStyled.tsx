@@ -7,6 +7,7 @@ type DrawnPatternProps = {
 };
 
 export const StyledAboutMeBox = styled(Box)`
+	margin-top: 20px;
 	width: 100%;
 	display: flex;
 	justify-content: left;

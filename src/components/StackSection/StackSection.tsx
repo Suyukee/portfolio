@@ -9,15 +9,15 @@ import {
 import IconTypescript from '@/icons/IconTypescript';
 import IconReact from '@/icons/IconReact';
 import IconNextjs from '@/icons/IconNextjs';
-import IconReactQuery from '@/icons/IconReactQuery';
+import IconRedux from '@/icons/IconRedux';
 
 const mainStack = [
 	['TypeScript', <IconTypescript />],
 	['React', <IconReact />],
 	['Next.js', <IconNextjs />],
-	['React query', <IconReactQuery />],
+	['Redux toolkit', <IconRedux />],
 ];
-const additionalStack = ['RTK query', 'Material UI', 'React-hook-form'];
+const additionalStack = ['RTK query', 'TanStack query', 'Material UI', 'React-hook-form'];
 
 function StackSection() {
 	return (
