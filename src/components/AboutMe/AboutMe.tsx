@@ -4,9 +4,12 @@ import {
 	StyledAboutMeItem,
 	StyledAboutMeList,
 	StyledContactBox,
+	StyledContactsTypography,
+	StyledIconSmile,
 	StyledIconStar,
 } from '@/components/AboutMe/AboutMeStyled';
 import IconStar from '@/icons/IconStar';
+import IconSmile from '@/icons/IconSmile';
 
 const factsAboutMe = [
 	'Около 1.5 лет самостоятельного обучения',
@@ -16,7 +19,7 @@ const factsAboutMe = [
 	'Прошёл курс TypeScript + React',
 ];
 
-const myContacts = ['suyukee@ya.ru', 'г. Нижний Новгород', '@suyukee'];
+const myContacts = ['Нижний Новгород', 'suyukee@ya.ru', '@suyukee'];
 
 function AboutMe() {
 	return (
@@ -38,10 +41,14 @@ function AboutMe() {
 			</div>
 
 			<StyledContactBox component="address">
+				<StyledIconSmile>
+					<IconSmile />
+				</StyledIconSmile>
+
 				{myContacts.map((contact, index) => (
-					<Typography key={index} variant="body1">
+					<StyledContactsTypography key={index} variant="body1">
 						{contact}
-					</Typography>
+					</StyledContactsTypography>
 				))}
 			</StyledContactBox>
 		</StyledAboutMeBox>

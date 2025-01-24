@@ -1,5 +1,5 @@
 import { DrawnPatternBox } from '@/components/DrawnPattern/DrawPatternStyled';
-import DrawnArrow from '@/icons/DrawnArrow';
+import DrawnArrow from '@/icons/ShapeDrawnArrow';
 
 function DrawnPattern() {
 	return (

@@ -1,4 +1,4 @@
-function DrawnArrow() {
+function ShapeDrawnArrow() {
 	return (
 		<svg width="93" height="169" viewBox="0 0 93 169" fill="none">
 			<path
@@ -23,4 +23,4 @@ function DrawnArrow() {
 	);
 }
 
-export default DrawnArrow;
+export default ShapeDrawnArrow;
