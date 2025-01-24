@@ -41,6 +41,7 @@ export const StyledAdditionalStackItem = styled('li')`
 	gap: 10px;
 `;
 
-export const StyledIconStar = styled(IconStar)`
-	box-shadow: 0 2px #000;
+export const StyledIconStar = styled('div')`
+	padding-top: 4px;
+	min-width: 26px;
 `;

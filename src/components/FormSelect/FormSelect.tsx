@@ -34,6 +34,7 @@ function FormSelect({ technology, setTechnology }: FormSelectProps) {
 					<MenuItem value="redux">Redux toolkit</MenuItem>
 					<MenuItem value="rtk-query">RTK query</MenuItem>
 					<MenuItem value="mui">MUI</MenuItem>
+					<MenuItem value="react-hook-form">React-Hook-Form</MenuItem>
 				</Select>
 			</StyledFormControl>
 		</Box>

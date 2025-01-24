@@ -10,6 +10,7 @@ import IconTypescript from '@/icons/IconTypescript';
 import IconReact from '@/icons/IconReact';
 import IconNextjs from '@/icons/IconNextjs';
 import IconRedux from '@/icons/IconRedux';
+import IconStar from '@/icons/IconStar';
 
 const mainStack = [
 	['TypeScript', <IconTypescript />],
@@ -42,7 +43,9 @@ function StackSection() {
 			<StyledAdditionalStackList>
 				{additionalStack.map((technology, index) => (
 					<StyledAdditionalStackItem key={index}>
-						<StyledIconStar />
+						<StyledIconStar>
+							<IconStar />
+						</StyledIconStar>
 						<Typography variant="subtitle1">{technology}</Typography>
 					</StyledAdditionalStackItem>
 				))}

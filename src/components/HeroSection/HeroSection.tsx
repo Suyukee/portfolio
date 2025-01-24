@@ -3,6 +3,7 @@ import { Box, Link, Typography } from '@mui/material';
 import { StyledButton } from '@/components/HeroSection/HeroSectionStyled';
 import StylizedFrame from '@/components/StylizedFrame';
 import TypographyWithBackgrond from '@/components/TypographyWithBackground';
+import DrawnPattern from '@/components/DrawnPattern';
 
 function HeroSection() {
 	return (
@@ -15,13 +16,18 @@ function HeroSection() {
 
 			<Box display="flex" flexDirection="column" alignItems="center">
 				<Typography variant="h1">Привет, я Вова</Typography>
-				<TypographyWithBackgrond text="frontend-разработчик" variant="subtitle1" />
+				<Typography variant="h1" noWrap>
+					<TypographyWithBackgrond text="frontend" />
+					-разработчик
+				</Typography>
 			</Box>
 
 			<StyledButton variant="contained" href="/files/резюме.pdf">
 				<Typography variant="button" color="white" textTransform="none">
 					Моё резюме
 				</Typography>
+
+				<DrawnPattern />
 			</StyledButton>
 		</>
 	);

@@ -1,5 +1,5 @@
 import { ReactElement } from 'react';
-import { Dot, Frame } from './StylizedFrameStyled';
+import { Dot, Frame } from '@/components/StylizedFrame/StylizedFrameStyled';
 
 function StylizedFrame({ children }: { children: ReactElement }) {
 	return (

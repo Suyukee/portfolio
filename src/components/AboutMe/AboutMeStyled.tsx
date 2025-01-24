@@ -1,40 +1,39 @@
 'use client';
 
-import { Box, styled, Typography } from '@mui/material';
-
-type DrawnPatternProps = {
-	background: string;
-};
+import { Box, styled } from '@mui/material';
 
 export const StyledAboutMeBox = styled(Box)`
-	margin-top: 20px;
+	padding: 0 10px;
 	width: 100%;
 	display: flex;
-	justify-content: left;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
 `;
 
-export const StyledContactBox = styled(Box)(({ theme }) => ({
-	paddingTop: 30,
-	display: 'flex',
-	justifyContent: 'center',
-	gap: 15,
+export const StyledAboutMeList = styled('ul')`
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	list-style: none;
+`;
 
-	[theme.breakpoints.down(750)]: {
-		flexDirection: 'column',
-	},
-}));
+export const StyledAboutMeItem = styled('li')`
+	display: flex;
+	gap: 10px;
+`;
 
-export const StyledContactItem = styled(Typography)<DrawnPatternProps>(({ background }) => ({
-	padding: '10px 20px',
+export const StyledIconStar = styled('div')`
+	padding-top: 6px;
+	min-width: 26px;
+`;
 
-	display: 'flex',
-	justifyContent: 'center',
-	alignItems: 'center',
-	gap: 10,
-
-	textAlign: 'center',
-	background: `${background}`,
-	border: '2px solid #2c2c2c',
-	borderRadius: 30,
-	fontStyle: 'normal',
-}));
+export const StyledContactBox = styled(Box)`
+	display: flex;
+	justify-content: center;
+	gap: 25px;
+	font-style: normal;
+`;
