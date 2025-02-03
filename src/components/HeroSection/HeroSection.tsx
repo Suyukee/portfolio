@@ -22,13 +22,15 @@ function HeroSection() {
 				</Typography>
 			</Box>
 
-			<StyledButton variant="contained" href="/files/резюме.pdf">
-				<Typography variant="button" color="white" textTransform="none">
-					Моё резюме
-				</Typography>
+			<Box position="relative">
+				<StyledButton variant="contained" href="/files/резюме.pdf">
+					<Typography variant="button" color="white" textTransform="none">
+						Моё резюме
+					</Typography>
+				</StyledButton>
 
 				<DrawnPattern />
-			</StyledButton>
+			</Box>
 		</>
 	);
 }

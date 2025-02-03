@@ -1,6 +1,6 @@
+import { Dispatch, SetStateAction } from 'react';
 import { Box, InputLabel, MenuItem, Select, SelectChangeEvent, Typography } from '@mui/material';
 import { StyledFormControl } from '@/components/FormSelect/FormSelectStyled';
-import { Dispatch, SetStateAction } from 'react';
 
 type FormSelectProps = {
 	technology: string;
